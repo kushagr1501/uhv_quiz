@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide the scroll bars */
+    font-family: Arial, sans-serif; /* Set a fallback font */
+  }
+  
+  .quiz-container {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    overflow-y: auto; /* Enable vertical scroll */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quiz-content {
+    width: 90%;
+    max-width: 500px; /* Adjust as needed */
+    margin: 20px auto; /* Center the content */
+    padding-bottom: 20px; /* Add padding to the bottom */
+ /* Enable vertical scroll */
+    height: calc(100vh - 40px); /* Adjust height to fill available viewport space */
+  }
+  .quiz-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .question-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%; /* Ensure each card takes the full width */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+  
+  
+  .question {
+    margin-bottom: 20px;
+    font-size: 1.2rem; /* Increase font size for readability */
+  }
+  
+  .options-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .option-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .option-button.correct {
+    background-color: green;
+  }
+  
+  .option-button.incorrect {
+    background-color: red;
+  }
+  
+  .quiz-completed {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+
+  .next-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .question-card {
+      width: 80%; /* Change width to 100% on smaller screens */
+      margin-right: 0; /* Remove margin on smaller screens */
+    }
+  }
